@@ -27,7 +27,6 @@ def _line_is_valid_part2(line, policy_regex):
     position_2 = int(match.group(2)) - 1
     letter = match.group(3)
     password = match.group(4)
-    print(password)
     if password[position_1] == letter and password[position_2] != letter:
         return True
     if password[position_2] == letter and password[position_1] != letter:

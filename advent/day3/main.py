@@ -1,4 +1,5 @@
-import math
+from functools import reduce
+import operator
 import os
 
 
@@ -43,7 +44,7 @@ def main():
         count_trees(data, 1, 2)
     ]
 
-    print(math.prod(part2_answers))
+    print(reduce(operator.mul, part2_answers, 1))
 
 if __name__ == '__main__':
     main()
